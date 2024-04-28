@@ -40,7 +40,7 @@ cd /app
 npm install &>>$LOGFILE
 VALIDATE $? " npm files installed"
 
-cp /home/ec2-user/Expense.shell/backend.service /etc/systemd/system/backend.service
+cp /home/ec2-user/Expense.shell-1/backend.service /etc/systemd/system/backend.service
 VALIDATE $? "Copied backend service file"
 
 systemctl daemon-reload &>>$LOGFILE

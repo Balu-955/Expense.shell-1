@@ -23,7 +23,7 @@ cd /usr/share/nginx/html
 unzip /tmp/frontend.zip &>>$LOGFILE
 VALIDATE $? "Extarct frontend application file"
 
-cp /home/ec2-user/Expense.shell/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
+cp /home/ec2-user/Expense.shell-1/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
 VALIDATE $? "Copied Front end service file"
 
 systemctl restart nginx &>>$LOGFILE
